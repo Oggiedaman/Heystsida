@@ -1,24 +1,31 @@
-var soundFiles = {
-	'Airhorn': 'SND/airhorn.mp3'
-};
+var sounds = [
+	{name: 'Airhorn', fileName: 'SND/airhorn.mp3'}
+];
 
 window.addEventListener('load', function(event) {
-	console.log("aiusfdh");
 	var buttons = document.getElementsByClassName('soundButton');
+	loadSounds();
 	for(var i = 0; i < buttons.length; i++) {
 		setupSoundButton(buttons[i]);
 	}
 });
 
-// TODO: load sounds in background, play when clicked
+function loadSounds() {
+	for(var i = 0; i < sounds.length; i++) {
+		var a = document.createElement('audio');
+		a.src = sounds[i].fileName;
+		sounds[i].element = a;
+		document.body.appendChild(a);
+	}
+}
+
 function setupSoundButton(button) {
 	button.addEventListener('click', function(event) {
-		var a = document.createElement('audio');
-		a.src = soundFiles[button.textContent];
-		a.autoplay = 'autoplay';
-
-		a.addEventListener('ended', elementRemover(a));
-
-		document.body.appendChild(a);
+		//crappy searching...
+		for(var i = 0; i < sounds.length; i++) {
+			if(button.textContent == sounds[i].name) {
+				sounds[i].element.play();
+			}
+		}
 	});
 }
