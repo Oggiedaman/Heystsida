@@ -19,7 +19,7 @@ function spawnHitmarker() {
 	hm.src = hmPath;
 
 	hm.style.position = 'absolute';
-	//hm.style.clear = 'both';
+	hm.style.pointerEvents = 'none';
 	hm.style.left = random(0, window.innerWidth - 2 * hm.width) + 'px';
 	hm.style.top = random(0, window.innerHeight - 2 * hm.height) + 'px';
 
