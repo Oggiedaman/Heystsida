@@ -16,8 +16,8 @@ function activateHitmarkers() {
 
 		hm.style.position = 'absolute';
 		//hm.style.clear = 'both';
-		hm.style.left = random(0, window.innerWidth - hm.width)+ 'px';
-		hm.style.top = random(0, window.innerHeight - hm.height) + 'px';
+		hm.style.left = random(0, window.innerWidth - 2 * hm.width) + 'px';
+		hm.style.top = random(0, window.innerHeight - 2 * hm.height) + 'px';
 
 		setTimeout(elementRemover(hm), hmLifetime);
 

@@ -1,8 +1,12 @@
 body {
 	text-align: center;
 	font-family:cursive;
-	background-color: #C6E2FF !important;
-	color: #FF8E00 !important;
+	background-color: #C6E2FF;
+	color: #FF8E00;
+}
+div img {
+	/* to make images in col be good */
+	width: 100%;
 }
 iframe {
 	border: 5px solid #000000;
