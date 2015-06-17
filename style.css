@@ -13,9 +13,14 @@ iframe {
 	width: 100%;
 }
 h1 {
-	background-color: #00547F;
 	text-align: center;
 }
 #hitmarkerButton {
 	border:2px solid #00547F ;
+	margin: 10px;
+}
+
+.blueborder {
+	background-color: #00547F;
+	border-radius: 10px;
 }
