@@ -30,6 +30,7 @@ function random(min, max) {
 	return min + Math.floor(Math.random() * (max - min));
 }
 
+// TODO: move to "utility" file
 function elementRemover(elem) {
 	return function() {
 		elem.parentElement.removeChild(elem);
