@@ -1,5 +1,7 @@
 var sounds = [
-	{name: 'Airhorn', fileName: 'SND/airhorn.mp3'}
+	{name: 'Airhorn', fileName: 'SND/airhorn.mp3'},
+	{name: 'Smoke Weed', fileName: 'SND/smokeweed.mp3'},
+	{name: 'Oh baby a triple', fileName: 'SND/triple.mp3'},
 ];
 
 window.addEventListener('load', function(event) {
