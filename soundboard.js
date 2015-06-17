@@ -13,5 +13,12 @@ function setupSoundButton(button) {
 	button.addEventListener('click', function(event) {
 		var a = document.createElement('audio');
 		a.src = soundFiles[button.textContent];
+		a.autoplay = 'autoplay';
+
+		a.addEventListener('ended', function(event) {
+			removeElement(a);
+		});
+
+		document.body.appendChild(a);
 	});
 }
