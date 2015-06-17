@@ -4,19 +4,14 @@ body {
 	background-color: #C6E2FF;
 	color: #FF8E00;
 }
-div img {
-	/* to make images in col be good */
-	width: 100%;
-}
 iframe {
 	border: 5px solid #000000;
-	width: 100%;
 }
 h1 {
 	text-align: center;
 }
 #hitmarkerButton {
-	border:2px solid #00547F ;
+	border: 2px solid #00547F ;
 	margin: 10px;
 }
 
