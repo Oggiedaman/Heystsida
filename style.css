@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	font-family:cursive;
+	font-family: cursive;
 	background-color: #C6E2FF;
 	color: #FF8E00;
 }
@@ -10,7 +10,7 @@ div img {
 }
 iframe {
 	border: 5px solid #000000;
-	width:100% ;
+	width: 100%;
 }
 h1 {
 	background-color: #00547F;
