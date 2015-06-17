@@ -14,8 +14,9 @@ function activateHitmarkers() {
 		hm.src = hmPath;
 
 		hm.style.position = 'absolute';
-		hm.style.left = random(0, window.innerWidth) - hm.width / 2;
-		hm.style.top = random(0, window.innerHeight) - hm.height / 2;
+		//hm.style.clear = 'both';
+		hm.style.left = random(0, window.innerWidth) - hm.width / 2 + 'px';
+		hm.style.top = random(0, window.innerHeight) - hm.height / 2 + 'px';
 
 		document.body.appendChild(hm);
 	}, hmDelay);
