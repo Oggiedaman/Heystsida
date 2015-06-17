@@ -14,10 +14,7 @@ window.addEventListener('load', function(event) {
 
 function loadSounds() {
 	for(var i = 0; i < sounds.length; i++) {
-		var a = document.createElement('audio');
-		a.src = sounds[i].fileName;
-		sounds[i].element = a;
-		document.body.appendChild(a);
+		sounds[i].element = new Audio(sounds[i].fileName);
 	}
 }
 

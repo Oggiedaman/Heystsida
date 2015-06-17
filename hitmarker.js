@@ -1,13 +1,12 @@
 var hmPath = 'IMG/hitmarker.png';
 var hmDelay = 125;
 var hmLifetime = 1000;
-var hmSoundElement; // load on start event
+var hmSound; // load on start event
 
 window.addEventListener('load', function(event) {
 	var button = document.getElementById('hitmarkerButton');
 
-	hmSoundElement = document.createElement('audio');
-	hmSoundElement.src = 'SND/hitmarker.wav';
+	hmSound = new Audio('SND/hitmarker.wav');
 
 	button.addEventListener('click', function(event) {
 		var go = confirm('Are you sure?');
@@ -28,7 +27,7 @@ function spawnHitmarker() {
 
 	document.body.appendChild(hm);
 
-	hmSoundElement.play();
+	hmSound.play();
 }
 
 // random in [min, max)
