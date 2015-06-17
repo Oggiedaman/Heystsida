@@ -17,5 +17,6 @@ h1 {
 
 .blueborder {
 	background-color: #00547F;
-	border-radius: 10px;
+	border-radius: 5px;
+	border: 2px solid #00547F;
 }
