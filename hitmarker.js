@@ -10,6 +10,7 @@ window.addEventListener('load', function(event) {
 	hmSoundElement.src = 'SND/hitmarker.wav';
 
 	button.addEventListener('click', function(event) {
+		var go = confirm('Are you sure?');
 		setInterval(spawnHitmarker, hmDelay);
 	});
 });
