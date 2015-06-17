@@ -1,5 +1,5 @@
 body {
-	/*text-align: center;*/
+	text-align: center;
 	font-family:cursive;
 	background-color: #C6E2FF !important;
 	color: #FF8E00 !important;
@@ -11,4 +11,7 @@ iframe {
 h1 {
 	background-color: #00547F;
 	text-align: center;
+}
+#hitmarkerButton {
+	width: 200px;
 }
