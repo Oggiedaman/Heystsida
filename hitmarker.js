@@ -9,7 +9,7 @@ window.addEventListener('load', function(event) {
 	hmSound = new Audio('SND/hitmarker.wav');
 
 	button.addEventListener('click', function(event) {
-		var go = confirm('Are you sure?');
+		var go = window.confirm('Are you sure?');
 		setInterval(spawnHitmarker, hmDelay);
 	});
 });
