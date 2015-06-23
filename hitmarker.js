@@ -1,4 +1,6 @@
-var hmPath = 'IMG/hitmarker.png';
+var hmPaths = [
+	'IMG/hitmarker.png'
+];
 var hmDelay = 125;
 var hmLifetime = 1000;
 var hmSound; // load on start event
@@ -16,7 +18,7 @@ window.addEventListener('load', function(event) {
 
 function spawnHitmarker() {
 	var hm = document.createElement('img');
-	hm.src = hmPath;
+	hm.src = hmPaths[random(0, hmPaths.length)];
 
 	hm.style.position = 'absolute';
 	hm.style.pointerEvents = 'none';
