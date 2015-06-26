@@ -1,8 +1,8 @@
 body {
 	text-align: center;
 	font-family: cursive;
-	background-color: #C6E2FF;
-	color: #FF8E00;
+	background-color: #ABFF8B;
+	color: #141414;
 }
 iframe {
 	border: 5px solid #000000;
@@ -12,12 +12,12 @@ h1 {
 	text-align: center;
 }
 #hitmarkerButton {
-	border: 2px solid #00547F ;
+	border: 2px solid #44B217 ;
 	margin: 10px;
 }
 
 .blueborder {
-	background-color: #00547F;
+	background-color: #44B217;
 	border-radius: 5px;
-	border: 2px solid #00547F;
+	border: 2px solid #44B217;
 }
